@@ -1,0 +1,22 @@
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+    <img src="../../assets/img/logo.png" class="logo d-inline-block align-top" alt="">
+  </a>
+</nav>
+  
+<main>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4" *ngFor="let card of cards">
+        <div class="card_container">
+          <a href="{{card.url}}">
+          <h5>{{card.title}}</h5>
+            <figure>
+              <img src = "{{card.image}}"/>
+            </figure>
+          </a>  
+        </div><!--card container-->
+      </div><!--col-->
+    </div><!--row-->
+  </div><!--container-->
+</main>
